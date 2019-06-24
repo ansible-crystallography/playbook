@@ -1,0 +1,11 @@
+- hosts: all
+  vars:
+    - cmt_owner: root
+    - cmt_group: root
+    - cmt_mode: 755
+    - xds_academic: yes
+    - xds_docs: yes
+  roles:
+    - ccp4
+    - coot
+    - xds
