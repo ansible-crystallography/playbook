@@ -6,6 +6,6 @@
     - xds_academic: yes
     - xds_docs: yes
   roles:
-    - ccp4
-    - coot
-    - xds
+    - ansible-ccp4
+    - ansible-coot
+    - ansible-xds

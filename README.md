@@ -1,34 +1,26 @@
-# Crystal Multi-tool
+# Ansible Crystallography Playbook
 
-Crystal Multi-Tool (CMT) is an Ansible Playbook for installing X-ray crystallography sofware suites. Each suite is installed through an Ansible role.
+`ansible-crystallography` is a suite of Ansible roles for software tools used by crystallographers.
 
-CMT and it's roles are written for CentOS 7.
+Each `ansible-crystallography` role installs a a different crystallography tool. This role installs all roles (by default).
 
-# In development!
+CentOS 7 is supported.
 
-This software is not yet complete. Currently the CCP4, Coot, and XDS roles are useful. DIALS and PHENIX will be added soon.
+## Roles installed
 
-## CMT Suites
-
-| Suite                                                         | Primary use                        |
-|---------------------------------------------------------------|------------------------------------|
-| [ccp4](http://www.ccp4.ac.uk/tutorials/targets/standard/)     | Crystal data refinement            |
-| [Coot](https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/) | Crystal data real-space refinement |
-| [DIALS](https://dials.github.io/)                             | Crystal data processing            |
-| [PHENIX](https://www.phenix-online.org/)                      | Crystal data refinement            |
-| [Rosetta](https://www.rosettacommons.org/software)            | Molecular replacement              |
-| [XDS](http://xds.mpimf-heidelberg.mpg.de/)                    | Crystal data processing            |
+| Role | Crystallography Tool | Primary use |
+|------|----------------------|-------------|
+| [ansible-ccp4](https://github.com/ansible-crystallography/ansible-ccp4.git) | [ccp4](http://www.ccp4.ac.uk/tutorials/targets/standard/) | Crystal data refinement |
+| [ansible-coot](https://github.com/ansible-crystallography/ansible-coot.git) | [Coot](https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/) | Crystal data real-space refinement |
+| [ansible-dials](https://github.com/ansible-crystallography/ansible-dials.git) | [DIALS](https://dials.github.io/) | Crystal data processing |
+| [ansible-phenix](https://github.com/ansible-crystallography/ansible-phenix.git) | [PHENIX](https://www.phenix-online.org/) | Crystal data refinement |
+| [ansible-rosetta](https://github.com/ansible-crystallography/ansible-rosetta.git) | [Rosetta](https://www.rosettacommons.org/software) | Molecular replacement |
+| [ansible-xds](https://github.com/ansible-crystallography/ansible-xds.git) | [XDS](http://xds.mpimf-heidelberg.mpg.de/) | Crystal data processing |
 
 ## Using CMT
 
 Download the following roles to the `roles/` folder of CMT:
- - [os](https://github.com/crystal-multi-tool/os.git)
- - [ccp4](https://github.com/crystal-multi-tool/ccp4.git)
- - [coot](https://github.com/crystal-multi-tool/coot.git)
- - [dials](https://github.com/crystal-multi-tool/dials.git)
- - [phenix](https://github.com/crystal-multi-tool/phenix.git)
- - [rosetta](https://github.com/crystal-multi-tool/rosetta.git)
- - [xds](https://github.com/crystal-multi-tool/xds.git)
+ - [os](https://github.com/ansible-crystallography/os.git)
 
 ## Vagrant
 
